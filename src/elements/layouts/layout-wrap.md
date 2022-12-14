@@ -1,0 +1,1 @@
+The `.layout-wrap` element will have a maximum width of `1200px`.

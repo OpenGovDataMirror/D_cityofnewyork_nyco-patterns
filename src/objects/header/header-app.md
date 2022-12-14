@@ -1,0 +1,1 @@
+The Application Header can be used as a Header replacement for progressive web applications.

@@ -1,0 +1,10 @@
+p The following is a static page sample that integrates ${this.package.nice} using the <em>CDN method</em>. This is the quickest way to get started developing or prototyping. However, the <em>NPM method</em> of installation is preferable for most long-term projects. View the <a href="installation">installation documentation</a> for more details.
+
+h2 Markup
+
+pre
+  = this.include('views/quick-start-demo.slm');
+
+h2 Preview
+
+iframe width='100%' height='778' src='quick-start-demo.html' class='border'

@@ -1,0 +1,60 @@
+/**
+ * Icons
+ */
+
+// Dependencies
+@import 'config/tokens';
+@import 'config/screens';
+@import 'config/cdn';
+@import 'scss/functions/str-replace';
+
+$screens: map-get($tokens, 'screens');
+$icons: map-get($tokens, 'icons');
+$icons-ui-size: map-get($icons, 'icon-ui');
+
+// Declarations
+@mixin iconSizes($variant: '') {
+  @each $key, $var in map-get($tokens, 'iconSizes') {
+    .#{$variant}icon-#{$key} {
+      width: nth($var, 1) !important;
+      height: nth($var, 2) !important;
+    }
+  }
+}
+
+.icon,
+[class*='icon-'] {
+  overflow: visible !important;
+  max-width: 100% !important;
+}
+
+.icon-ui,
+[class*='icon-ui-'] {
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+
+  width: nth($icons-ui-size, 1);
+  height: nth($icons-ui-size, 2);
+}
+
+@each $key, $var in map-get($tokens, 'icons') {
+  $path: $key;
+
+  @if map-get($tokens, 'iconVariants') {
+    @each $str in map-get($tokens, 'iconVariants') {
+      $path: str-replace($path, $str);
+    }
+  }
+
+  .#{$key} {
+    width: nth($var, 1);
+    height: nth($var, 2);
+  }
+}
+
+@include screens {
+  @include iconSizes($variant);
+}

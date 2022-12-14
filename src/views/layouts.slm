@@ -1,0 +1,30 @@
+- pattern = 'Layouts';
+
+/ Layout
+= extend('/slm/templates/default');
+
+/ Variables
+= partial('/slm/variables/classes.slm');
+
+/ Mixins
+= partial('/slm/mixins/head.slm');
+= partial('/slm/mixins/nav.slm');
+= partial('/slm/mixins/pattern.slm');
+
+/ Content blocks
+= content('head');
+  = mixin('head', pattern);
+
+= content('header');
+  = mixin('header');
+
+= content('content');
+  div class='${classPageHeader}'
+    h1 class='${classPageH1}' = pattern;
+
+  = mixin('pattern', 'elements/layouts/layout-wrap', 1, 'Wrap');
+  = mixin('pattern', 'elements/layouts/layout-content');
+  = mixin('pattern', 'elements/layouts/layout-sidebar');
+  = mixin('pattern', 'elements/layouts/layout-column', 1, 'Columns');
+
+  = mixin('pattern', 'elements/layouts/layout-figma', 0, 'Figma Layouts, Columns, and Spacing');

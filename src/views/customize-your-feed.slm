@@ -1,0 +1,38 @@
+/ Layout
+= extend('/slm/templates/default');
+
+/ Variables
+= partial('/slm/variables/classes.slm');
+
+/ Mixins
+= partial('/slm/mixins/head.slm');
+= partial('/slm/mixins/nav.slm');
+
+/ Component
+= partial('../objects/feed/feed.slm');
+
+/ Content blocks
+= content('head');
+  = mixin('head', 'Feed Embed');
+
+= content('header');
+  = mixin('header');
+
+= content('content');
+  div class='${classPageHeader}'
+    h1 class='${classPageH1}' Embeddable Snippet
+  section id='feed-form' class='pb-4'
+    div class='bg-white-50t my-6 p-4 desktop:p-6'
+      div class='layout-wrap mx-auto flex justify-center'
+        = partial('../objects/feed/feed-embed.slm');
+
+    div class='layout-content px-4'
+      div class='o-content mx-auto'
+        = partial(`../objects/feed/feed-form.slm`);
+
+= content('script');
+  script src='https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.min.js'
+  script src='https://cdn.polyfill.io/v2/polyfill.js?features=Object.assign&flags=gated'
+  script src='objects/feed/feed-embed.js'
+  javascript:
+    new FeedEmbed();

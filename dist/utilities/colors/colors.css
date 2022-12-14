@@ -1,0 +1,471 @@
+.color-light-background {
+  --nyco-color: #000000;
+  --nyco-color-alt: #57595C;
+  --nyco-font-smooth: ;
+  --nyco-font-weight: ;
+  --nyco-headings: #000000;
+  --nyco-hyperlinks: #1642DF;
+  --nyco-visited: #1642DF;
+  --nyco-hover: #031553;
+  --nyco-background-color: #FFFFFF;
+  --nyco-border: #57595C;
+  --nyco-input-background: #FFFFFF;
+  --nyco-placeholder: #999ca4;
+  --nyco-focus: #1642DF;
+  --nyco-error: #fc5d52;
+  --nyco-box-shadow-color: #031553;
+  --nyco-button-text: #FFFFFF;
+  --nyco-button-disabled: #7c7f83;
+  --nyco-primary: #1642DF;
+  --nyco-secondary: #fc5d52;
+  --nyco-code-primary: #4157aa;
+  --nyco-code-secondary: #031553;
+  --nyco-code-background: #F0F7FE;
+  --nyco-code-border: #4157aa;
+  --nyco-card-background-color: #F0F7FE;
+  --nyco-record_hero-background-color: #E7F2FE;
+  /**
+   * Base Colors
+   */
+  color: var(--nyco-color);
+  background-color: var(--nyco-background-color);
+  /**
+   * Focus State
+   */
+  /**
+   * Error State
+   */
+  /**
+   * Buttons
+   */
+}
+
+.color-light-background .input > input:focus,
+.color-light-background .select > select:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0), 0 0 0 4px rgba(255, 255, 255, 0);
+}
+
+.color-light-background .input > input:focus,
+.color-light-background .select > select:focus {
+  border-color: var(--nyco-focus);
+  box-shadow: 0 0 0 2px var(--nyco-focus);
+}
+
+.color-light-background .btn:focus, .color-light-background button:focus, .color-light-background a:focus {
+  outline: none;
+  box-shadow: 0 0 0 1.25px var(--nyco-background-color), 0 0 0 4px var(--nyco-focus);
+}
+
+.color-light-background .c-question__container.error input,
+.color-light-background .c-question__container.error select,
+.color-light-background .c-question__container.error .option__base,
+.color-light-background .c-question__container.error .error-message {
+  border-color: var(--nyco-error);
+  color: var(--nyco-error);
+}
+
+.color-light-background .c-question__required {
+  color: var(--nyco-error);
+}
+
+.color-light-background .error::after {
+  color: var(--nyco-error);
+}
+
+.color-light-background .btn-primary,
+.color-light-background .color-primary-button {
+  color: var(--nyco-button-text);
+  background-color: var(--nyco-primary);
+  border-color: transparent;
+}
+
+.color-light-background .btn-primary:hover:not([disabled]), .color-light-background .btn-primary:active:not([disabled]),
+.color-light-background .color-primary-button:hover:not([disabled]),
+.color-light-background .color-primary-button:active:not([disabled]) {
+  color: var(--nyco-button-text);
+  background: var(--nyco-primary);
+}
+
+.color-light-background .btn-primary:disabled,
+.color-light-background .color-primary-button:disabled {
+  opacity: 1;
+  color: var(--nyco-button-text);
+  background: var(--nyco-button-disabled);
+}
+
+.color-light-background .btn-secondary,
+.color-light-background .color-secondary-button {
+  color: var(--nyco-button-text);
+  background-color: var(--nyco-secondary);
+  border-color: transparent;
+}
+
+.color-light-background .btn-secondary:hover:not([disabled]), .color-light-background .btn-secondary:active:not([disabled]),
+.color-light-background .color-secondary-button:hover:not([disabled]),
+.color-light-background .color-secondary-button:active:not([disabled]) {
+  color: var(--nyco-button-text);
+  background: var(--nyco-secondary);
+}
+
+.color-light-background .btn-secondary:disabled,
+.color-light-background .color-secondary-button:disabled {
+  opacity: 1;
+  color: var(--nyco-button-text);
+  background: var(--nyco-button-disabled);
+}
+
+.color-mid-background {
+  --nyco-color: #000000;
+  --nyco-color-alt: #57595C;
+  --nyco-font-smooth: ;
+  --nyco-font-weight: ;
+  --nyco-headings: #000000;
+  --nyco-hyperlinks: #1642DF;
+  --nyco-visited: #1642DF;
+  --nyco-hover: #031553;
+  --nyco-background-color: #F3F3F3;
+  --nyco-border: #57595C;
+  --nyco-input-background: #FFFFFF;
+  --nyco-placeholder: #999ca4;
+  --nyco-focus: #1642DF;
+  --nyco-error: #fc5d52;
+  --nyco-box-shadow-color: #031553;
+  --nyco-button-text: #FFFFFF;
+  --nyco-button-disabled: #7c7f83;
+  --nyco-primary: #1642DF;
+  --nyco-secondary: #fc5d52;
+  --nyco-code-primary: #4157aa;
+  --nyco-code-secondary: #031553;
+  --nyco-code-background: #F0F7FE;
+  --nyco-code-border: #4157aa;
+  --nyco-card-background-color: #F0F7FE;
+  --nyco-record_hero-background-color: #E7F2FE;
+  /**
+   * Base Colors
+   */
+  color: var(--nyco-color);
+  background-color: var(--nyco-background-color);
+  /**
+   * Focus State
+   */
+  /**
+   * Error State
+   */
+  /**
+   * Buttons
+   */
+}
+
+.color-mid-background .input > input:focus,
+.color-mid-background .select > select:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0), 0 0 0 4px rgba(255, 255, 255, 0);
+}
+
+.color-mid-background .input > input:focus,
+.color-mid-background .select > select:focus {
+  border-color: var(--nyco-focus);
+  box-shadow: 0 0 0 2px var(--nyco-focus);
+}
+
+.color-mid-background .btn:focus, .color-mid-background button:focus, .color-mid-background a:focus {
+  outline: none;
+  box-shadow: 0 0 0 1.25px var(--nyco-background-color), 0 0 0 4px var(--nyco-focus);
+}
+
+.color-mid-background .c-question__container.error input,
+.color-mid-background .c-question__container.error select,
+.color-mid-background .c-question__container.error .option__base,
+.color-mid-background .c-question__container.error .error-message {
+  border-color: var(--nyco-error);
+  color: var(--nyco-error);
+}
+
+.color-mid-background .c-question__required {
+  color: var(--nyco-error);
+}
+
+.color-mid-background .error::after {
+  color: var(--nyco-error);
+}
+
+.color-mid-background .btn-primary,
+.color-mid-background .color-primary-button {
+  color: var(--nyco-button-text);
+  background-color: var(--nyco-primary);
+  border-color: transparent;
+}
+
+.color-mid-background .btn-primary:hover:not([disabled]), .color-mid-background .btn-primary:active:not([disabled]),
+.color-mid-background .color-primary-button:hover:not([disabled]),
+.color-mid-background .color-primary-button:active:not([disabled]) {
+  color: var(--nyco-button-text);
+  background: var(--nyco-primary);
+}
+
+.color-mid-background .btn-primary:disabled,
+.color-mid-background .color-primary-button:disabled {
+  opacity: 1;
+  color: var(--nyco-button-text);
+  background: var(--nyco-button-disabled);
+}
+
+.color-mid-background .btn-secondary,
+.color-mid-background .color-secondary-button {
+  color: var(--nyco-button-text);
+  background-color: var(--nyco-secondary);
+  border-color: transparent;
+}
+
+.color-mid-background .btn-secondary:hover:not([disabled]), .color-mid-background .btn-secondary:active:not([disabled]),
+.color-mid-background .color-secondary-button:hover:not([disabled]),
+.color-mid-background .color-secondary-button:active:not([disabled]) {
+  color: var(--nyco-button-text);
+  background: var(--nyco-secondary);
+}
+
+.color-mid-background .btn-secondary:disabled,
+.color-mid-background .color-secondary-button:disabled {
+  opacity: 1;
+  color: var(--nyco-button-text);
+  background: var(--nyco-button-disabled);
+}
+
+.color-primary-background {
+  --nyco-color: #FFFFFF;
+  --nyco-color-alt: #8195dc;
+  --nyco-font-smooth: true;
+  --nyco-font-weight: ;
+  --nyco-headings: #FFFFFF;
+  --nyco-hyperlinks: #FFFFFF;
+  --nyco-visited: #FFFFFF;
+  --nyco-hover: #FFFFFF;
+  --nyco-background-color: #1642DF;
+  --nyco-border: #F0F7FE;
+  --nyco-input-background: #1642DF;
+  --nyco-placeholder: #FFFFFF;
+  --nyco-focus: #F0F7FE;
+  --nyco-error: #fc5d52;
+  --nyco-box-shadow-color: #FFFFFF;
+  --nyco-button-text: #FFFFFF;
+  --nyco-button-disabled: #7c7f83;
+  --nyco-primary: #031553;
+  --nyco-secondary: #fc5d52;
+  --nyco-code-primary: #4157aa;
+  --nyco-code-secondary: #031553;
+  --nyco-code-background: #F0F7FE;
+  --nyco-code-border: #4157aa;
+  --nyco-card-background-color: #F0F7FE;
+  --nyco-record_hero-background-color: #E7F2FE;
+  /**
+   * Base Colors
+   */
+  color: var(--nyco-color);
+  background-color: var(--nyco-background-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /**
+   * Focus State
+   */
+  /**
+   * Error State
+   */
+  /**
+   * Buttons
+   */
+}
+
+.color-primary-background .input > input:focus,
+.color-primary-background .select > select:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0), 0 0 0 4px rgba(255, 255, 255, 0);
+}
+
+.color-primary-background .input > input:focus,
+.color-primary-background .select > select:focus {
+  border-color: var(--nyco-focus);
+  box-shadow: 0 0 0 2px var(--nyco-focus);
+}
+
+.color-primary-background .btn:focus, .color-primary-background button:focus, .color-primary-background a:focus {
+  outline: none;
+  box-shadow: 0 0 0 1.25px var(--nyco-background-color), 0 0 0 4px var(--nyco-focus);
+}
+
+.color-primary-background .c-question__container.error input,
+.color-primary-background .c-question__container.error select,
+.color-primary-background .c-question__container.error .option__base,
+.color-primary-background .c-question__container.error .error-message {
+  border-color: var(--nyco-error);
+  color: var(--nyco-error);
+}
+
+.color-primary-background .c-question__required {
+  color: var(--nyco-error);
+}
+
+.color-primary-background .error::after {
+  color: var(--nyco-error);
+}
+
+.color-primary-background .btn-primary,
+.color-primary-background .color-primary-button {
+  color: var(--nyco-button-text);
+  background-color: var(--nyco-primary);
+  border-color: transparent;
+}
+
+.color-primary-background .btn-primary:hover:not([disabled]), .color-primary-background .btn-primary:active:not([disabled]),
+.color-primary-background .color-primary-button:hover:not([disabled]),
+.color-primary-background .color-primary-button:active:not([disabled]) {
+  color: var(--nyco-button-text);
+  background: var(--nyco-primary);
+}
+
+.color-primary-background .btn-primary:disabled,
+.color-primary-background .color-primary-button:disabled {
+  opacity: 1;
+  color: var(--nyco-button-text);
+  background: var(--nyco-button-disabled);
+}
+
+.color-primary-background .btn-secondary,
+.color-primary-background .color-secondary-button {
+  color: var(--nyco-button-text);
+  background-color: var(--nyco-secondary);
+  border-color: transparent;
+}
+
+.color-primary-background .btn-secondary:hover:not([disabled]), .color-primary-background .btn-secondary:active:not([disabled]),
+.color-primary-background .color-secondary-button:hover:not([disabled]),
+.color-primary-background .color-secondary-button:active:not([disabled]) {
+  color: var(--nyco-button-text);
+  background: var(--nyco-secondary);
+}
+
+.color-primary-background .btn-secondary:disabled,
+.color-primary-background .color-secondary-button:disabled {
+  opacity: 1;
+  color: var(--nyco-button-text);
+  background: var(--nyco-button-disabled);
+}
+
+.color-dark-background {
+  --nyco-color: #FFFFFF;
+  --nyco-color-alt: #8195dc;
+  --nyco-font-smooth: true;
+  --nyco-font-weight: ;
+  --nyco-headings: #FFFFFF;
+  --nyco-hyperlinks: #FFFFFF;
+  --nyco-visited: #FFFFFF;
+  --nyco-hover: #FFFFFF;
+  --nyco-background-color: #031553;
+  --nyco-border: #568adf;
+  --nyco-input-background: #031553;
+  --nyco-placeholder: #FFFFFF;
+  --nyco-focus: #568adf;
+  --nyco-error: #fc5d52;
+  --nyco-box-shadow-color: #FFFFFF;
+  --nyco-button-text: #FFFFFF;
+  --nyco-button-disabled: #7c7f83;
+  --nyco-primary: #1642DF;
+  --nyco-secondary: #fc5d52;
+  --nyco-code-primary: #4157aa;
+  --nyco-code-secondary: #031553;
+  --nyco-code-background: #F0F7FE;
+  --nyco-code-border: #4157aa;
+  --nyco-card-background-color: #F0F7FE;
+  --nyco-record_hero-background-color: #E7F2FE;
+  /**
+   * Base Colors
+   */
+  color: var(--nyco-color);
+  background-color: var(--nyco-background-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /**
+   * Focus State
+   */
+  /**
+   * Error State
+   */
+  /**
+   * Buttons
+   */
+}
+
+.color-dark-background .input > input:focus,
+.color-dark-background .select > select:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0), 0 0 0 4px rgba(255, 255, 255, 0);
+}
+
+.color-dark-background .input > input:focus,
+.color-dark-background .select > select:focus {
+  border-color: var(--nyco-focus);
+  box-shadow: 0 0 0 2px var(--nyco-focus);
+}
+
+.color-dark-background .btn:focus, .color-dark-background button:focus, .color-dark-background a:focus {
+  outline: none;
+  box-shadow: 0 0 0 1.25px var(--nyco-background-color), 0 0 0 4px var(--nyco-focus);
+}
+
+.color-dark-background .c-question__container.error input,
+.color-dark-background .c-question__container.error select,
+.color-dark-background .c-question__container.error .option__base,
+.color-dark-background .c-question__container.error .error-message {
+  border-color: var(--nyco-error);
+  color: var(--nyco-error);
+}
+
+.color-dark-background .c-question__required {
+  color: var(--nyco-error);
+}
+
+.color-dark-background .error::after {
+  color: var(--nyco-error);
+}
+
+.color-dark-background .btn-primary,
+.color-dark-background .color-primary-button {
+  color: var(--nyco-button-text);
+  background-color: var(--nyco-primary);
+  border-color: transparent;
+}
+
+.color-dark-background .btn-primary:hover:not([disabled]), .color-dark-background .btn-primary:active:not([disabled]),
+.color-dark-background .color-primary-button:hover:not([disabled]),
+.color-dark-background .color-primary-button:active:not([disabled]) {
+  color: var(--nyco-button-text);
+  background: var(--nyco-primary);
+}
+
+.color-dark-background .btn-primary:disabled,
+.color-dark-background .color-primary-button:disabled {
+  opacity: 1;
+  color: var(--nyco-button-text);
+  background: var(--nyco-button-disabled);
+}
+
+.color-dark-background .btn-secondary,
+.color-dark-background .color-secondary-button {
+  color: var(--nyco-button-text);
+  background-color: var(--nyco-secondary);
+  border-color: transparent;
+}
+
+.color-dark-background .btn-secondary:hover:not([disabled]), .color-dark-background .btn-secondary:active:not([disabled]),
+.color-dark-background .color-secondary-button:hover:not([disabled]),
+.color-dark-background .color-secondary-button:active:not([disabled]) {
+  color: var(--nyco-button-text);
+  background: var(--nyco-secondary);
+}
+
+.color-dark-background .btn-secondary:disabled,
+.color-dark-background .color-secondary-button:disabled {
+  opacity: 1;
+  color: var(--nyco-button-text);
+  background: var(--nyco-button-disabled);
+}

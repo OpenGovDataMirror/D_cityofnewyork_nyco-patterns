@@ -1,0 +1,413 @@
+/**
+ * Icons
+ */
+
+.icon,
+[class*=icon-] {
+  overflow: visible !important;
+  max-width: 100% !important;
+}
+
+.icon-ui,
+[class*=icon-ui-] {
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+  width: 24px;
+  height: 24px;
+}
+
+.icon-ui circle,
+[class*=icon-ui-] circle {
+  fill: currentColor;
+}
+
+.icon-logo-nyc {
+  width: 350px;
+  height: 117px;
+}
+
+.icon-logo-nyco-secondary {
+  width: 694px;
+  height: 76px;
+}
+
+.icon-logo-nyco {
+  width: 692px;
+  height: 358px;
+}
+
+.icon-logo-primary {
+  width: 693px;
+  height: 313px;
+}
+
+.icon-logo-secondary {
+  width: 692px;
+  height: 121px;
+}
+
+.icon-ui {
+  width: 24px;
+  height: 24px;
+}
+
+.icon-1 {
+  width: 8px !important;
+  height: 8px !important;
+}
+
+.icon-2 {
+  width: 16px !important;
+  height: 16px !important;
+}
+
+.icon-3 {
+  width: 24px !important;
+  height: 24px !important;
+}
+
+.icon-4 {
+  width: 32px !important;
+  height: 32px !important;
+}
+
+.icon-5 {
+  width: 40px !important;
+  height: 40px !important;
+}
+
+.icon-6 {
+  width: 48px !important;
+  height: 48px !important;
+}
+
+.icon-7 {
+  width: 56px !important;
+  height: 56px !important;
+}
+
+.icon-8 {
+  width: 64px !important;
+  height: 64px !important;
+}
+
+.icon-9 {
+  width: 72px !important;
+  height: 72px !important;
+}
+
+.icon-10 {
+  width: 80px !important;
+  height: 80px !important;
+}
+
+.icon-11 {
+  width: 88px !important;
+  height: 88px !important;
+}
+
+.icon-12 {
+  width: 96px !important;
+  height: 96px !important;
+}
+
+.icon-large {
+  width: 136px !important;
+  height: 136px !important;
+}
+
+.icon-xlarge {
+  width: 256px !important;
+  height: 256px !important;
+}
+
+@media (min-width: 400px) {
+  .small\:icon-1 {
+    width: 8px !important;
+    height: 8px !important;
+  }
+
+  .small\:icon-2 {
+    width: 16px !important;
+    height: 16px !important;
+  }
+
+  .small\:icon-3 {
+    width: 24px !important;
+    height: 24px !important;
+  }
+
+  .small\:icon-4 {
+    width: 32px !important;
+    height: 32px !important;
+  }
+
+  .small\:icon-5 {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .small\:icon-6 {
+    width: 48px !important;
+    height: 48px !important;
+  }
+
+  .small\:icon-7 {
+    width: 56px !important;
+    height: 56px !important;
+  }
+
+  .small\:icon-8 {
+    width: 64px !important;
+    height: 64px !important;
+  }
+
+  .small\:icon-9 {
+    width: 72px !important;
+    height: 72px !important;
+  }
+
+  .small\:icon-10 {
+    width: 80px !important;
+    height: 80px !important;
+  }
+
+  .small\:icon-11 {
+    width: 88px !important;
+    height: 88px !important;
+  }
+
+  .small\:icon-12 {
+    width: 96px !important;
+    height: 96px !important;
+  }
+
+  .small\:icon-large {
+    width: 136px !important;
+    height: 136px !important;
+  }
+
+  .small\:icon-xlarge {
+    width: 256px !important;
+    height: 256px !important;
+  }
+}
+
+@media (min-width: 480px) {
+  .mobile\:icon-1 {
+    width: 8px !important;
+    height: 8px !important;
+  }
+
+  .mobile\:icon-2 {
+    width: 16px !important;
+    height: 16px !important;
+  }
+
+  .mobile\:icon-3 {
+    width: 24px !important;
+    height: 24px !important;
+  }
+
+  .mobile\:icon-4 {
+    width: 32px !important;
+    height: 32px !important;
+  }
+
+  .mobile\:icon-5 {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .mobile\:icon-6 {
+    width: 48px !important;
+    height: 48px !important;
+  }
+
+  .mobile\:icon-7 {
+    width: 56px !important;
+    height: 56px !important;
+  }
+
+  .mobile\:icon-8 {
+    width: 64px !important;
+    height: 64px !important;
+  }
+
+  .mobile\:icon-9 {
+    width: 72px !important;
+    height: 72px !important;
+  }
+
+  .mobile\:icon-10 {
+    width: 80px !important;
+    height: 80px !important;
+  }
+
+  .mobile\:icon-11 {
+    width: 88px !important;
+    height: 88px !important;
+  }
+
+  .mobile\:icon-12 {
+    width: 96px !important;
+    height: 96px !important;
+  }
+
+  .mobile\:icon-large {
+    width: 136px !important;
+    height: 136px !important;
+  }
+
+  .mobile\:icon-xlarge {
+    width: 256px !important;
+    height: 256px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .tablet\:icon-1 {
+    width: 8px !important;
+    height: 8px !important;
+  }
+
+  .tablet\:icon-2 {
+    width: 16px !important;
+    height: 16px !important;
+  }
+
+  .tablet\:icon-3 {
+    width: 24px !important;
+    height: 24px !important;
+  }
+
+  .tablet\:icon-4 {
+    width: 32px !important;
+    height: 32px !important;
+  }
+
+  .tablet\:icon-5 {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .tablet\:icon-6 {
+    width: 48px !important;
+    height: 48px !important;
+  }
+
+  .tablet\:icon-7 {
+    width: 56px !important;
+    height: 56px !important;
+  }
+
+  .tablet\:icon-8 {
+    width: 64px !important;
+    height: 64px !important;
+  }
+
+  .tablet\:icon-9 {
+    width: 72px !important;
+    height: 72px !important;
+  }
+
+  .tablet\:icon-10 {
+    width: 80px !important;
+    height: 80px !important;
+  }
+
+  .tablet\:icon-11 {
+    width: 88px !important;
+    height: 88px !important;
+  }
+
+  .tablet\:icon-12 {
+    width: 96px !important;
+    height: 96px !important;
+  }
+
+  .tablet\:icon-large {
+    width: 136px !important;
+    height: 136px !important;
+  }
+
+  .tablet\:icon-xlarge {
+    width: 256px !important;
+    height: 256px !important;
+  }
+}
+
+@media (min-width: 960px) {
+  .desktop\:icon-1 {
+    width: 8px !important;
+    height: 8px !important;
+  }
+
+  .desktop\:icon-2 {
+    width: 16px !important;
+    height: 16px !important;
+  }
+
+  .desktop\:icon-3 {
+    width: 24px !important;
+    height: 24px !important;
+  }
+
+  .desktop\:icon-4 {
+    width: 32px !important;
+    height: 32px !important;
+  }
+
+  .desktop\:icon-5 {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .desktop\:icon-6 {
+    width: 48px !important;
+    height: 48px !important;
+  }
+
+  .desktop\:icon-7 {
+    width: 56px !important;
+    height: 56px !important;
+  }
+
+  .desktop\:icon-8 {
+    width: 64px !important;
+    height: 64px !important;
+  }
+
+  .desktop\:icon-9 {
+    width: 72px !important;
+    height: 72px !important;
+  }
+
+  .desktop\:icon-10 {
+    width: 80px !important;
+    height: 80px !important;
+  }
+
+  .desktop\:icon-11 {
+    width: 88px !important;
+    height: 88px !important;
+  }
+
+  .desktop\:icon-12 {
+    width: 96px !important;
+    height: 96px !important;
+  }
+
+  .desktop\:icon-large {
+    width: 136px !important;
+    height: 136px !important;
+  }
+
+  .desktop\:icon-xlarge {
+    width: 256px !important;
+    height: 256px !important;
+  }
+}

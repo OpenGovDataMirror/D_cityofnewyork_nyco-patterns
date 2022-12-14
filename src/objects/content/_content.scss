@@ -1,0 +1,35 @@
+@import 'config/tokens';
+@import 'config/code';
+@import 'config/tables';
+
+.o-content {
+  display: block;
+
+  > *:first-child,
+  > *:last-child  {
+    margin-top: 0;
+  }
+
+  code {
+    @include code-inline;
+  }
+
+  pre {
+    @include code-block;
+
+    overflow: auto;
+    max-height: 80vh;
+  }
+
+  table {
+    @include tables-base;
+  }
+
+  img {
+    box-shadow: 0 0 0 map-get($tokens, 'grid') / 2;
+  }
+
+  pre, .code-block, table {
+    margin-bottom: map-get($tokens, 'grid') * 2;
+  }
+}

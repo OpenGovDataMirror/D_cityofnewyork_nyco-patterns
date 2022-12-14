@@ -1,0 +1,69 @@
+/**
+ * Code
+ */
+
+// Dependencies
+@import 'config/tokens';
+@import 'config/type';
+@import 'config/code';
+
+$colors: map-get($tokens, 'colors');
+
+// Declarations
+code, pre, .hljs {
+  @include code();
+}
+
+p code, li code {
+  @include code-inline();
+}
+
+pre {
+  @include code-block();
+
+  code {
+    color: inherit !important;
+    font-family: inherit !important;
+    font-size: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+    background-color: inherit !important;
+    border: none !important;
+    padding: 0 !important;
+  }
+}
+
+.code {
+  @include code();
+}
+
+.code__comment, .hljs-comment {
+  color: map-get($colors, 'grey-50t');
+}
+
+.code-block {
+  @include code();
+  @include code-block();
+
+  padding: 0;
+
+  pre {
+    color: inherit;
+    font-size: inherit;
+    display: block;
+    background-color: transparent;
+    margin: 0;
+    padding: 16px;
+    border: none;
+
+    max-height: 80vh;
+  }
+
+  code {
+    padding: 0;
+  }
+}
+
+.text-code, .hljs-selector-class, .hljs-selector-id {
+  color: var(--nyco-code-primary);
+}

@@ -1,0 +1,40 @@
+/**
+ * Footer
+ */
+
+// Dependencies
+@import 'config/tokens';
+
+$screens: map-get($tokens, 'screens');
+$grid: map-get($tokens, 'grid');
+
+// Declarations
+.o-footer {
+  padding: ($grid * 14) ($grid * 3);
+  border-top: $grid solid !important;
+}
+
+.o-footer__divider {
+  border-bottom: 1px solid !important;
+}
+
+.o-footer__inline-nav {
+  > a,
+  > button {
+    margin-left: $grid;
+    margin-right: $grid;
+  }
+
+  > *:first-child {
+    margin-left: 0 !important;
+  }
+
+  > *:last-child {
+    margin-right: 0 !important;
+  }
+}
+
+.o-footer__logo {
+  width: 257px;
+  height: 45px;
+}

@@ -1,0 +1,1 @@
+The primary button should be used for in-page functionality and form submitting buttons.

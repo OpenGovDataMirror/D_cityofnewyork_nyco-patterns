@@ -1,0 +1,109 @@
+/**
+ * Code
+ */
+
+code, pre, .hljs {
+  color: var(--nyco-code-secondary);
+  display: inline-block;
+  font-family: 1em;
+  font-family: monospace;
+  font-size: 1em;
+  font-weight: normal;
+  line-height: 1.6;
+  background-color: var(--nyco-code-background);
+  border-color: var(--nyco-code-border);
+  border-width: 2px;
+  border-radius: 2px;
+  border-style: solid;
+  padding: 0.1em 0.3em;
+}
+
+p code, li code {
+  font-size: 85%;
+  font-family: inherit;
+  letter-spacing: 0.01em;
+  border-radius: 3px;
+  border-width: 1px;
+  margin: 0;
+  display: inline;
+}
+
+pre {
+  color: var(--nyco-code-primary);
+  display: block;
+  max-width: 100%;
+  overflow: auto;
+  padding: 24px;
+}
+
+pre code {
+  color: inherit !important;
+  font-family: inherit !important;
+  font-size: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+  background-color: inherit !important;
+  border: none !important;
+  padding: 0 !important;
+}
+
+.code {
+  color: var(--nyco-code-secondary);
+  display: inline-block;
+  font-family: 1em;
+  font-family: monospace;
+  font-size: 1em;
+  font-weight: normal;
+  line-height: 1.6;
+  background-color: var(--nyco-code-background);
+  border-color: var(--nyco-code-border);
+  border-width: 2px;
+  border-radius: 2px;
+  border-style: solid;
+  padding: 0.1em 0.3em;
+}
+
+.code__comment, .hljs-comment {
+  color: #999ca4;
+}
+
+.code-block {
+  color: var(--nyco-code-secondary);
+  display: inline-block;
+  font-family: 1em;
+  font-family: monospace;
+  font-size: 1em;
+  font-weight: normal;
+  line-height: 1.6;
+  background-color: var(--nyco-code-background);
+  border-color: var(--nyco-code-border);
+  border-width: 2px;
+  border-radius: 2px;
+  border-style: solid;
+  padding: 0.1em 0.3em;
+  color: var(--nyco-code-primary);
+  display: block;
+  max-width: 100%;
+  overflow: auto;
+  padding: 24px;
+  padding: 0;
+}
+
+.code-block pre {
+  color: inherit;
+  font-size: inherit;
+  display: block;
+  background-color: transparent;
+  margin: 0;
+  padding: 16px;
+  border: none;
+  max-height: 80vh;
+}
+
+.code-block code {
+  padding: 0;
+}
+
+.text-code, .hljs-selector-class, .hljs-selector-id {
+  color: var(--nyco-code-primary);
+}

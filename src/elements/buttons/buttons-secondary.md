@@ -1,0 +1,1 @@
+The secondary button should be used for calls-to-action and page links (not anchor links).

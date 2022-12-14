@@ -1,0 +1,118 @@
+//
+// Variables
+//
+
+// Dependencies
+@import 'config/tokens';
+@import 'config/grid';
+
+$font-size: map-get($tokens, 'fontSize');
+$buttons: map-get($tokens, 'buttons');
+$buttons-border-width: map-get($buttons, 'border-width');
+$buttons-border-radius: map-get($buttons, 'border-radius');
+$buttons-inner-size: map-get($buttons, 'inner-size');
+$buttons-padding: (($grid * 2) - $buttons-border-width) ($grid * 2.75);
+$buttons-padding-small: ($grid - $buttons-border-width) ($grid * 1.5);
+$buttons-padding-large: ((($grid * 3) - ($grid / 2))  - $buttons-border-width) ($grid * 4);
+
+// Declarations
+@mixin button-reset() {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  cursor: pointer;
+
+  // Default display settings enables the centering of icons
+  display: inline-flex;
+  align-items: center;
+
+  background: transparent;
+
+  // Inherit font & color from ancestor
+  color: inherit;
+  font: inherit;
+  font-weight: bold;
+  text-decoration: underline;
+
+  // Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+.
+  line-height: normal;
+
+  // Corrects font smoothing for webkit (and firefox)
+  -moz-osx-font-smoothing: inherit;
+   -webkit-font-smoothing: inherit;
+
+  // Corrects inability to style clickable `input` types in iOS
+  -webkit-appearance: none;
+
+  // Remove excess padding and border in Firefox 4+
+  &::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
+}
+
+@mixin button-base() {
+  color: inherit;
+  font-weight: bold;
+  font-size: inherit;
+  font-family: inherit;
+  line-height: $buttons-inner-size;
+  text-align: center;
+  justify-content: center;
+  text-decoration: none;
+  text-transform: initial;
+
+  appearance: none;
+  cursor: pointer;
+  background: transparent;
+  padding: $buttons-padding;
+
+  border-style: solid;
+  border-color: currentColor;
+  border-width: $buttons-border-width;
+  border-radius: $buttons-border-radius;
+
+  transition: background .1s ease-in,
+              color .1s ease-in,
+              box-shadow .1s ease-in;
+
+  &:hover:not([disabled]),
+  &:active:not([disabled]) {
+    box-shadow: map-get(map-get($tokens, 'boxShadow'), 'up'),
+                0 0 0 3px rgba(255, 255, 255, 0);
+  }
+
+  &:disabled {
+    opacity: 0.6;
+  }
+}
+
+@mixin button-color($name: 'default') {
+  color: var(--nyco-button-text);
+  background-color: var(--nyco-#{$name});
+  border-color: transparent;
+
+  &:hover:not([disabled]),
+  &:active:not([disabled]) {
+    color: var(--nyco-button-text);
+    background: var(--nyco-#{$name});
+  }
+
+  &:disabled {
+    opacity: 1;
+    color: var(--nyco-button-text);
+    background: var(--nyco-button-disabled);
+  }
+}
+
+@mixin button-small() {
+  font-size: map-get($font-size, 'small');
+  padding: $buttons-padding-small;
+}
+
+@mixin button-large() {
+  font-size: map-get($font-size, 'large');
+  padding: $buttons-padding-large;
+}

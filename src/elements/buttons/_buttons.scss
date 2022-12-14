@@ -1,0 +1,46 @@
+/**
+ * Buttons
+ */
+
+// Dependencies
+@import 'config/tokens';
+@import 'config/buttons';
+@import 'config/screens';
+
+$grid: map-get($tokens, 'grid');
+$borderRadius: map-get(map-get($tokens, 'inputs'), 'button-border-radius');
+
+button {
+  @include button-reset();
+}
+
+@include screens {
+  .#{$variant}btn,
+  .#{$variant}buttons {
+    @include button-base();
+  }
+
+  /**
+   * Application Button
+   */
+
+  .#{$variant}btn-app,
+  .#{$variant}button-app {
+    border-radius: $borderRadius;
+
+    &:hover,
+    &:active {
+      box-shadow: none !important;
+    }
+  }
+
+  .#{$variant}btn-small,
+  .#{$variant}button-small {
+    @include button-small();
+  }
+
+  .#{$variant}btn-large,
+  .#{$variant}button-large {
+    @include button-large();
+  }
+}

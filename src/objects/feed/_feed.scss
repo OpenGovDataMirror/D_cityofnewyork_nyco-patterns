@@ -1,0 +1,130 @@
+/**
+ * Medium Widget
+ */
+
+// Dependencies
+@import '@nycopportunity/pttrn-scripts/src/spinner/_spinner.scss';
+@import 'config/tokens';
+
+$oFeed_breakpoint: #{map-get(map-get($tokens, 'screens'), 'tablet')}px;
+
+// Declarations
+.o-feed__header {
+  display: flex;
+  align-items: center;
+  padding-bottom: map-get($tokens, 'grid') * 2;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-color: inherit;
+}
+
+.o-feed__avatar {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 1000px;
+  overflow: hidden;
+  margin-right: map-get($tokens, 'grid');
+  flex-shrink: 0;
+}
+
+.o-feed__spinner {
+  color: map-get(map-get($tokens, 'colors'), marigold);
+  display: flex;
+  justify-content: center;
+
+  svg {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.c-feed-item {
+  margin-top: map-get($tokens, 'grid') * 4;
+  padding-bottom: map-get($tokens, 'grid') * 4;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-color: inherit;
+  box-sizing: border-box;
+
+  &:last-of-type {
+    border-bottom: none;
+  }
+}
+
+.c-feed-item__date {
+  margin-bottom: map-get($tokens, 'grid');
+}
+
+.c-feed-item__thumbnail {
+  margin-top: map-get($tokens, 'grid') * 3;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border: 1px solid;
+}
+
+.c-feed-item__excerpt {
+  font-size: inherit;
+  margin-top: map-get($tokens, 'grid');
+}
+
+.o-feed-3column {
+  .c-feed-item,
+  .o-feed__items::after {
+    @media screen and (min-width: $oFeed_breakpoint) {
+      flex: 0 0 calc(33.33% - 12px);
+      max-width: calc(33.33% - 12px);
+    }
+  }
+}
+
+.o-feed-2column {
+  .c-feed-item,
+  .o-feed__items::after {
+    @media screen and (min-width: $oFeed_breakpoint) {
+      flex: 0 0 calc(50% - 12px);
+      max-width: calc(50% - 12px);
+    }
+  }
+
+  .o-feed__items::after {
+    display: none;
+  }
+}
+
+// Column Layouts
+[class*='o-feed-'][class*='column'] {
+  .o-feed__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &::after {
+      content: '';
+      flex: auto;
+    }
+  }
+
+  .c-feed-item {
+    display: flex;
+    flex-direction: column;
+    border-bottom: none;
+  }
+
+  .c-feed-item__thumbnail {
+    order: -1;
+  }
+}
+
+/**
+ * Utilities
+ */
+
+.fs-inherit {
+  font-size: inherit !important;
+}
+
+.ws-unset {
+  white-space: unset !important;
+}

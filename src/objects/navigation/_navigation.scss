@@ -1,0 +1,83 @@
+/**
+ * Navigation
+ */
+
+// Dependencies
+@import 'config/tokens';
+@import 'config/type';
+
+$screens: map-get($tokens, 'screens');
+$grid: map-get($tokens, 'grid');
+
+// Declarations
+.o-navigation {
+  display: flex;
+  align-items: stretch;
+}
+
+.o-navigation__wrap {
+  flex: 1
+}
+
+.o-navigation__banner {
+  padding: ($grid * 2) ($grid * 4);
+
+  @media (min-width: #{map-get($screens, 'tablet')}px) {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+.o-navigation__banner-title {
+  @include type('h6');
+  font-weight: bold;
+  margin: 0px;
+}
+
+.o-navigation__nav {
+  flex: 1;
+  padding: ($grid * 2) ($grid * 3);
+}
+
+.o-navigation__stick {
+  @media (min-width: #{map-get($screens, 'tablet')}px) {
+    position: sticky;
+    top: 0px;
+
+    max-height: 100vh;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.o-navigation__link-header {
+  display: block;
+  // font-weight: bold;
+  border-bottom: 1px solid !important;
+
+  padding: ($grid * 2) $grid;
+  margin-top: ($grid * 2);
+
+  @media (min-width: #{map-get($screens, 'tablet')}px) {
+    padding-left: ($grid * 2);
+    padding-right: ($grid * 2);
+  }
+}
+
+.o-navigation__link {
+  display: block;
+
+  padding: $grid $grid;
+
+  @media (min-width: #{map-get($screens, 'tablet')}px) {
+    padding-left: ($grid * 2);
+    padding-right: ($grid * 2);
+  }
+}

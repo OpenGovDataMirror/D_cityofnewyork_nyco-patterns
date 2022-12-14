@@ -1,0 +1,88 @@
+.o-content {
+  display: block;
+}
+
+.o-content > *:first-child,
+.o-content > *:last-child {
+  margin-top: 0;
+}
+
+.o-content code {
+  font-size: 85%;
+  font-family: inherit;
+  letter-spacing: 0.01em;
+  border-radius: 3px;
+  border-width: 1px;
+  margin: 0;
+  display: inline;
+  white-space: nowrap;
+}
+
+.o-content pre {
+  color: var(--nyco-code-primary);
+  display: block;
+  max-width: 100%;
+  overflow: auto;
+  padding: 24px;
+  overflow: auto;
+  max-height: 80vh;
+}
+
+.o-content table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.o-content table thead tr {
+  background-color: #F9F9FA;
+}
+
+.o-content table tbody tr:nth-child(odd) {
+  background-color: #FFFFFF;
+}
+
+.o-content table tbody tr:nth-child(even) {
+  background-color: #F9F9FA;
+}
+
+.o-content table th {
+  vertical-align: top;
+}
+
+.o-content table th, .o-content table td, .o-content table caption {
+  padding: 16px 24px;
+}
+
+.o-content table caption {
+  font-size: 0.833em;
+  font-style: italic;
+  background-color: #F3F3F3;
+  padding: 8px 24px;
+}
+
+.o-content table code, .o-content table pre {
+  font-size: 85%;
+  font-family: inherit;
+  letter-spacing: 0.01em;
+  border-radius: 3px;
+  border-width: 1px;
+  margin: 0;
+  display: inline;
+  white-space: nowrap;
+}
+
+.o-content table pre {
+  color: var(--nyco-code-primary);
+  display: block;
+  max-width: 100%;
+  overflow: auto;
+  padding: 24px;
+}
+
+.o-content img {
+  box-shadow: 0 0 0 4px;
+}
+
+.o-content pre, .o-content .code-block, .o-content table {
+  margin-bottom: 16px;
+}

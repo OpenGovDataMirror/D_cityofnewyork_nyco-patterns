@@ -1,0 +1,33 @@
+- pattern = 'Buttons';
+
+/ Layout
+= extend('/slm/templates/default');
+
+/ Variables
+= partial('/slm/variables/classes.slm');
+
+/ Mixins
+= partial('/slm/mixins/head.slm');
+= partial('/slm/mixins/nav.slm');
+= partial('/slm/mixins/pattern.slm');
+
+/ Content blocks
+= content('head');
+  = mixin('head', pattern);
+
+= content('header');
+  = mixin('header');
+
+= content('content');
+  div class='${classPageHeader}'
+    h1 class='${classPageH1}' = pattern;
+
+  = mixin('pattern', 'elements/buttons/buttons', 1, 'Default Buttons');
+  = mixin('pattern', 'elements/buttons/buttons-text');
+  = mixin('pattern', 'elements/buttons/buttons-disabled');
+  = mixin('pattern', 'elements/buttons/buttons-primary');
+  = mixin('pattern', 'elements/buttons/buttons-primary-disabled');
+  = mixin('pattern', 'elements/buttons/buttons-secondary');
+  = mixin('pattern', 'elements/buttons/buttons-large');
+  = mixin('pattern', 'elements/buttons/buttons-small');
+  = mixin('pattern', 'elements/buttons/buttons-app', 1, 'Application Button');

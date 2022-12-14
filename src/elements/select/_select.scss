@@ -1,0 +1,27 @@
+/**
+ * Select
+ */
+
+// Dependencies
+@use 'config/select';
+
+// Declarations
+.select {
+  display: inline-block;
+  position: relative;
+
+  select {
+    border-color: var(--nyco-border);
+    background-color: var(--nyco-input-background);
+
+    &::placeholder {
+      color: var(--nyco-placeholder);
+    }
+
+    @include select.base();
+  }
+}
+
+.select__graphic {
+  @include select.graphic();
+}

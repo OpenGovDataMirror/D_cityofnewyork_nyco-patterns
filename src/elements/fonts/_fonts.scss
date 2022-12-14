@@ -1,0 +1,8 @@
+@import 'config/fonts';
+@import 'config/cdn';
+@import 'scss/functions/font-face';
+
+@include font-face('IBM Plex Sans', '#{$cdn}#{$path-to-fonts}IBM-Plex-Sans/IBMPlexSans-Regular', normal, normal, (eot woff2 woff ttf otf));
+@include font-face('IBM Plex Sans', '#{$cdn}#{$path-to-fonts}IBM-Plex-Sans/IBMPlexSans-Italic', normal, italic, (eot woff2 woff ttf otf));
+@include font-face('IBM Plex Sans', '#{$cdn}#{$path-to-fonts}IBM-Plex-Sans/IBMPlexSans-Bold', bold, normal, (eot woff2 woff ttf otf));
+@include font-face('IBM Plex Sans', '#{$cdn}#{$path-to-fonts}IBM-Plex-Sans/IBMPlexSans-BoldItalic', bold, italic, (eot woff2 woff ttf otf));

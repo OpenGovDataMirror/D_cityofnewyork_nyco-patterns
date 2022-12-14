@@ -1,0 +1,52 @@
+- pattern = 'Inputs';
+
+/ Layout
+= extend('/slm/templates/default');
+
+/ Variables
+= partial('/slm/variables/classes.slm');
+
+/ Mixins
+= partial('/slm/mixins/head.slm');
+= partial('/slm/mixins/nav.slm');
+= partial('/slm/mixins/pattern.slm');
+
+/ Content blocks
+= content('head');
+  = mixin('head', pattern);
+
+= content('header');
+  = mixin('header');
+
+= content('content');
+  div class='${classPageHeader}'
+    h1 class='${classPageH1}' = pattern;
+
+  = mixin('pattern', 'elements/inputs/input', 1, 'Text Input');
+  = mixin('pattern', 'elements/inputs/input-search', 'Search Input');
+  = mixin('pattern', 'elements/inputs/input-search-large', 'Large Search Input');
+  = mixin('pattern', 'elements/inputs/input-currency-usd', 1, 'Currency Input');
+  = mixin('pattern', 'elements/inputs/input-autocomplete');
+
+= content('script');
+  javascript:
+    const autocomplete = nyco.autocomplete({
+        // Providing a callback for the selected event.
+        selected: function(value) {
+            console.dir('Selected ' + value + '!');
+          }
+      });
+
+    // Updating dropdown options post instantiation.
+    autocomplete.options([
+      ['Bronx', 'Hunts Point', 'Arthur Avenue', 'Riverside', 'Mott Haven'],
+      ['Queens', 'Corona', 'East Elmhurst', 'Forest Hills', 'Fresh Pond'],
+      ['Brooklyn', 'Flatbush', 'Bay Ridge', 'DUMBO', 'Williamsburg'],
+      ['Staten Island', 'South Beach', 'Fort Wadsworth', 'Todt Hill', 'Great Kills'],
+      ['Manhattan', 'Lower', 'Midtown', 'Chinatown', 'SoHo']
+    ]);
+
+    // Updating strings used by the
+    autocomplete.strings({
+      'OPTION_SELECTED': '{{ VALUE }} is selected!'
+    });

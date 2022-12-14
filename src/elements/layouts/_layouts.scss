@@ -1,0 +1,37 @@
+/**
+ * Layouts
+ */
+
+// Dependencies
+@import 'config/tokens';
+@import 'config/screens';
+
+$grid: map-get($tokens, 'grid');
+
+// Declaration
+@mixin layouts($variant: '') {
+  .#{$variant}layout-wrap {
+    max-width: 1200px;
+  }
+
+  .#{$variant}layout-sidebar {
+    > *:first-child {
+      width: 16rem
+    }
+
+    > *:first-child + * {
+      width: calc(100% - 16rem)
+    }
+  }
+
+  .#{$variant}layout-content {
+    > *:first-child {
+      max-width: 600px;
+      width: 100%
+    }
+  }
+}
+
+@include screens {
+  @include layouts($variant);
+}

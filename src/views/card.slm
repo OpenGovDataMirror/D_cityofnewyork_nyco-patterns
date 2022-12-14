@@ -1,0 +1,30 @@
+- pattern = 'Card';
+
+/ Layout
+= extend('/slm/templates/default');
+
+/ Variables
+= partial('/slm/variables/classes.slm');
+
+/ Mixins
+/ Mixins are included here and can be used in content blocks below
+= partial('/slm/mixins/head.slm');
+= partial('/slm/mixins/nav.slm');
+= partial('/slm/mixins/readme.slm');
+/ = partial('/slm/mixins/partial.slm');
+= partial('/slm/mixins/pattern.slm');
+
+/ Content blocks
+/ Blocks nested in these sections will appear in specific areas in the extended Layout
+= content('head');
+  = mixin('head', pattern);
+
+= content('header');
+  = mixin('header');
+
+= content('content');
+  h1 class='${classPageHeader}'
+    = pattern;
+
+  = mixin('pattern', 'components/card/card');
+  = mixin('pattern', 'components/card/card-inline-description-list');

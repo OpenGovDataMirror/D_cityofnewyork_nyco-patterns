@@ -1,0 +1,22 @@
+@import 'config/screens';
+
+@mixin forms-default() {
+  appearance: none;
+  -webkit-appearance: none;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 0;
+
+  display: block;
+  margin: 0;
+  max-width: 100%;
+  min-width: 200px;
+  width: 100%;
+
+  cursor: pointer;
+  font: inherit;
+
+  @media screen and (min-width: $tablet) {
+    min-width: auto;
+  }
+}
